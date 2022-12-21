@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex exercises</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        aside {
+            background-color: #320387;
+            color: white;
+        }
+        
+        nav {
+            background-color: #C12177;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+        
+        header, footer {
+            background-color: black;
+            color: white;
+            height: 120px;
+            padding: 10px;
+        }
+        
+        nav, aside {
+            width: 160px;
+            padding: 10px;
+        }
+        
+        article {
+            flex-grow: 1;
+            padding: 10px;
+        }
+        </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+    </main>
+    <footer>Footer</footer>
+    
+</body>
+</html>
